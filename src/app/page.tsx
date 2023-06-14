@@ -3,6 +3,11 @@ import styles from './page.module.css';
 import Hero from 'public/hero.png';
 import Button from '@/components/Button/Button';
 
+export const metadata = {
+  title: 'Lucas Santana',
+  description: 'This is Home Page',
+};
+
 export default function Home() {
   return (
     <div className={styles.container}>

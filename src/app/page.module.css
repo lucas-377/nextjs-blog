@@ -1,3 +1,12 @@
+@keyframes move {
+  from {
+    transform: translateY(-10px);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -25,16 +34,6 @@
   object-fit: contain;
   /* animation: move 3s infinite ease alternate; */
 }
-
-@keyframes move {
-  from {
-    transform: translateY(-10px);
-  }
-  to {
-    transform: translateY(10px);
-  }
-}
-
 
 .desc {
   font-size: 24px;
