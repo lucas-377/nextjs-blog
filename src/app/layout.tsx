@@ -2,6 +2,7 @@ import Navbar from '@/components/navbar/Navbar';
 import './globals.css';
 import { Red_Hat_Text } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
+import { ThemeProvider } from '@/components/context/ThemeContext';
 
 const rh = Red_Hat_Text({ subsets: ['latin'] });
 
@@ -18,11 +19,13 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={rh.className}>
-        <div className="container">
-          <Navbar />
-          {children}
-          <Footer />
-        </div>
+        <ThemeProvider>
+          <div className="container">
+            <Navbar />
+            {children}
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
