@@ -13,7 +13,7 @@ interface Post {
 }
 
 async function getData(): Promise<Post[]> {
-  const res = await fetch('http://localhost:3000/api/posts', {
+  const res = await fetch('https://jsonplaceholder.typicode.com/posts', {
     cache: 'no-store',
   });
 

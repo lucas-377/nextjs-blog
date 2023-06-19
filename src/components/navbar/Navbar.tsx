@@ -5,7 +5,13 @@ import React from 'react';
 import styles from './navbar.module.css';
 import DarkModeToggle from '../DarkModeToggle/DarkModeToggle';
 
-const links = [
+interface LinkItem {
+  id: number;
+  title: string;
+  url: string;
+}
+
+const links: LinkItem[] = [
   {
     id: 1,
     title: 'Home',
@@ -38,7 +44,7 @@ const links = [
   },
 ];
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <div className={styles.container}>
       <Link href="/" className={styles.logo}>

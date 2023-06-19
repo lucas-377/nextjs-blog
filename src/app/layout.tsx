@@ -2,7 +2,7 @@ import Navbar from '@/components/navbar/Navbar';
 import './globals.css';
 import { Red_Hat_Text } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
-import { ThemeProvider } from '@/components/context/ThemeContext';
+import { ThemeProvider } from '@/context/ThemeContext';
 
 const rh = Red_Hat_Text({ subsets: ['latin'] });
 
